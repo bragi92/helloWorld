@@ -1,7 +1,7 @@
 # https://github.com/uBlockOrigin/uAssets/pull/3517
 twitch-videoad.js application/javascript
 (function() {
-	if ( /(^|\.)ttvnw\.net$/.test(document.location.hostname) === false ) { return; }
+	if ( /(^|\.)usher.ttvnw\.net$/.test(document.location.hostname) === false ) { return; }
 	var realFetch = window.fetch;
 	window.fetch = function(input, init) {
 		if ( arguments.length >= 2 && typeof input === 'string' && input.includes('/access_token') ) {
